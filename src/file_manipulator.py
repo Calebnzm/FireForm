@@ -76,7 +76,7 @@ class FileManipulator:
         
         try:
             # 1. Extract against the canonical target
-            self.llm.set_model_config(provider="gemini", model_name="gemini-2.5-flash")
+            self.llm.set_model_config()
             self.llm._target_fields = canonical_target
             self.llm._transcript_text = user_input
 
